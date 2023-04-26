@@ -1,0 +1,52 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.registerForm {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(161,21,207, 0.5);
+    border: 6px solid #7922CC;
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+    opacity: 95%;
+    font-size: 25px;
+    color: ghostwhite;
+    flex-direction: column;
+}
+
+.registerBlock {
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+}
+
+.registerForm1 {
+    text-align: center;
+    font-family: Serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 85%;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Гениальный экран регистрации</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<div class="registerForm">
+    <div class="registerBlock">
+        <p>Регистрация</p>
+        <form class="registerForm1" action="/register/" method="POST" enctype="multipart/form-data">
+        {{ form.login(placeholder="Имя пользователя") }}
+        {{ form.email(placeholder="Адрес электронной почты") }}
+        {{ form.password(placeholder="Пароль") }}
+        {{ form.image(placeholder="Ваше изображение")}}
+        {{ form.submit }}
+        </form>
+    </div>
+</div>
+</body>
+</html>

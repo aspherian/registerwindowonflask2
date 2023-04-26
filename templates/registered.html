@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 40%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+<p>Добро пожаловать в систему.</p>
+<p>Ваш логин: {{ login }}</p>
+<p>Ваша электронная почта: {{ email }}</p>
+<p>Ваш пароль: {{ password }}</p>
+<p>Ваше изображение: </p>
+<img src="{{ url_for('static', filename='img/' + imagename)}}">
+</body>
+</html>
